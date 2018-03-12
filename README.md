@@ -14,6 +14,8 @@ The entire language is in the **maccheroni idioma** (sorry people), so only ital
 
 Here you are some examples:
 
+### Modules, variables and loops
+
 **CadregaScript**
 ```cadrega
   acchiappa nomeModulo da('./nomemodulo.cadrega')
@@ -44,6 +46,49 @@ compiles the following CommonJs output:
     console.log(i)
   }
 
+```
+
+### Operators
+
+|Cadrega               |CommonJs|
+|----------------------|--------|
+| aggiungi             | +      |
+| leva                 | -      |
+| moltiplica           | *      |
+| dividi               | /      |
+| assomiglia a         | ==     |
+| è spiccicato a       | ===    |
+| è più di             | >      |
+| è meno di            | <      |
+| è di più o uguale a  | >=     |
+| è di meno o uguale a | <=     |
+
+**Examples**
+
+```cadrega
+10 aggiungi 30
+20 leva 5
+5 moltiplica 5
+10 dividi 2
+5 assomiglia a 5
+10 è spiccicato a 10
+40 è più di 5
+10 è meno di 20
+99 è di più o uguale a 80
+5 è di meno o uguale a 7
+```
+
+```js
+10 + 10
+20 - 5
+5 * 5
+10 / 2
+5 == 5
+10 === 10
+40 > 5
+10 < 20
+99 >= 80
+5 <= 7
 ```
 
 # License
