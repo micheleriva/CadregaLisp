@@ -1,0 +1,24 @@
+{
+  "name": "cadregascript",
+  "version": "0.0.1",
+  "description": "Just an useless programming language",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micheleriva/cadregascript.git"
+  },
+  "keywords": [
+    "esoteric-language",
+    "compiler",
+    "nodejs"
+  ],
+  "author": "Michele Riva <ciao@micheleriva.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micheleriva/cadregascript/issues"
+  },
+  "homepage": "https://github.com/micheleriva/cadregascript#readme"
+}
