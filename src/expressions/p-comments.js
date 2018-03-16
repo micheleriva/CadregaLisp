@@ -4,7 +4,7 @@ const comments = [
     js: '//'
   },
   {
-    cdg: /ti ho detto di parlare?/g,
+    cdg: /ti ho detto di parlare\?/g,
     js: '/*'
   },
   {
