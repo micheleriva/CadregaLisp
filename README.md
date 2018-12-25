@@ -24,14 +24,15 @@ $ ./brambilla
 🍎 ▶ (+ x 10)
 15
 🍎 ▶ (ciapa-che! x 10)
-🍎 ▶ (= x 5)#è minga vera
+🍎 ▶ (= x 5)
+#è minga vera
 🍎 ▶ fèrmes
 ```
 
 # Primitives
 
 |Haskell | Lisp   | Cadrega       |
-+--------+--------+---------------+
+|--------|--------|---------------|
 |`True`  |`#t`    |`#è vera`      |
 |`False` |`#f`    |`#è minga vera`|
 |`let`   |`define`|`ciapa`        |
