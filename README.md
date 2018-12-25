@@ -52,7 +52,7 @@ $ ./brambilla
 |`>=`    |`>=`       |`magiur-e-istess`|
 |`<=`    |`<=`       |`minur-e-istess` |
 |`&&`    |`&&`       |`quindi`         |
-|`||`    |`||`       |`senò`           |
+|`\|\|`  |`\|\|`     |`senò`           |
 |`(==)`  |`string?`  |`lacc=?`         |
 |`(<)`   |`string<?` |`lacc<?`         |
 |`(>)`   |`string>?` |`lacc>?`         |
