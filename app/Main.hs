@@ -195,26 +195,26 @@ eqv [_, _]                                 = return $ Bool False
 eqv badArgList                             = throwError $ NumArgs 2 badArgList
 
 primitives :: [(String, [LispVal] -> ThrowsError LispVal)]
-primitives = [("+",         numericBinop (+)),
-              ("-",         numericBinop (-)),
-              ("*",         numericBinop (*)),
-              ("/",         numericBinop div),
-              ("mod",       numericBinop mod),
-              ("quotient",  numericBinop quot),
-              ("remainder", numericBinop rem),
-              ("=",         numBoolBinop (==)),
-              ("<",         numBoolBinop (<)),
-              (">",         numBoolBinop (>)),
-              ("/=",        numBoolBinop (/=)),
-              (">=",        numBoolBinop (>=)),
-              ("<=",        numBoolBinop (<=)),
-              ("&&",        boolBoolBinop (&&)),
-              ("||",        boolBoolBinop (||)),
-              ("string=?",  strBoolBinop (==)),
-              ("string<?",  strBoolBinop (<)),
-              ("string>?",  strBoolBinop (>)),
-              ("string<=?", strBoolBinop (<=)),
-              ("string>=?", strBoolBinop (>=))]
+primitives = [("e",         numericBinop (+)),
+              ("men",       numericBinop (-)),
+              ("per",       numericBinop (*)),
+              ("divis",     numericBinop div),
+              ("mudel",     numericBinop mod),
+              ("quosient",  numericBinop quot),
+              ("rest",      numericBinop rem),
+              ("istess",    numBoolBinop (==)),
+              ("minur",     numBoolBinop (<)),
+              ("magiur",    numBoolBinop (>)),
+              ("minga-istess",    numBoolBinop (/=)),
+              ("magiur-e-istess", numBoolBinop (>=)),
+              ("minur-e-istess",  numBoolBinop (<=)),
+              ("quindi",          boolBoolBinop (&&)),
+              ("senò",            boolBoolBinop (||)),
+              ("lacc=?",  strBoolBinop (==)),
+              ("lacc<?",  strBoolBinop (<)),
+              ("lacc>?",  strBoolBinop (>)),
+              ("lacc<=?", strBoolBinop (<=)),
+              ("lacc>=?", strBoolBinop (>=))]
 
 numericBinop :: (Integer -> Integer -> Integer) -> [LispVal] -> ThrowsError LispVal
 numericBinop op           []  = throwError $ NumArgs 2 []

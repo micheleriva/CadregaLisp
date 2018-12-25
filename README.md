@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> CadregaLisp </h1>
+  <h1> 🍎 CadregaLisp 🍎 </h1>
   <img src="/docs/dddrrraaaaaaculaaamiiiinchiaaa.jpg" />
   <p>
     <br />
@@ -32,12 +32,32 @@ $ ./brambilla
 
 # Grammar
 
-|Haskell | Lisp   | Cadrega       |
-|--------|--------|---------------|
-|`True`  |`#t`    |`#è vera`      |
-|`False` |`#f`    |`#è minga vera`|
-|`let`   |`define`|`ciapa`        |
-|`N/A?`  |`set!`  |`ciapa-che!`   |
+|Haskell | Lisp      | Cadrega         |
+|--------|-----------|-----------------|
+|`True`  |`#t`       |`#è vera`        |
+|`False` |`#f`       |`#è minga vera`  |
+|`let`   |`define`   |`ciapa`          |
+|`N/A?`  |`set!`     |`ciapa-che!`     |
+|`(+)`   |`+`        |`e`              |
+|`(-)`   |`-`        |`men`            |
+|`(*)`   |`*`        |`per`            |
+|`div`   |`/`        |`divis`          |
+|`mod`   |`%`        |`modul`          |
+|`quot`  |`quot`     |`quosient`       |
+|`rem`   |`rem`      |`rest`           |
+|`==`    |`=`        |`stess`          |
+|`<`     |`<`        |`minur`          |
+|`>`     |`>`        |`magiur`         |
+|`/=`    |`/=`       |`minga-istess`   |
+|`>=`    |`>=`       |`magiur-e-istess`|
+|`<=`    |`<=`       |`minur-e-istess` |
+|`&&`    |`&&`       |`quindi`         |
+|`||`    |`||`       |`senò`           |
+|`(==)`  |`string?`  |`lacc=?`         |
+|`(<)`   |`string<?` |`lacc<?`         |
+|`(>)`   |`string>?` |`lacc>?`         |
+|`(<?)`  |`string<=?`|`lacc<=?`        |
+|`(>?)`  |`string>=?`|`lacc>=?`        |
 
 # License
 [MIT](/LICENSE.md)
