@@ -1,10 +1,11 @@
-# CadregaLisp
-
 <div align="center">
+  <h1> CadregaLisp </h1>
   <img src="/docs/dddrrraaaaaaculaaamiiiinchiaaa.jpg" />
+  <p>
+    <br />
+    There are only two kind of people. Those who wants to write LISP in Brianzolo Dialect and those who lie.
+  </p>
 </div>
-
-There are only two kind of people. Those who wants to write LISP in **Brianzolo Dialect** and those who lie.
 
 # Getting Started
 
@@ -29,14 +30,14 @@ $ ./brambilla
 🍎 ▶ fèrmes
 ```
 
-# Primitives
+# Grammar
 
 |Haskell | Lisp   | Cadrega       |
 |--------|--------|---------------|
 |`True`  |`#t`    |`#è vera`      |
 |`False` |`#f`    |`#è minga vera`|
 |`let`   |`define`|`ciapa`        |
-|`N/A?   |`set!`  |`ciapa-che!`   |
+|`N/A?`  |`set!`  |`ciapa-che!`   |
 
 # License
 [MIT](/LICENSE.md)
