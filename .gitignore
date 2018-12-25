@@ -3,3 +3,5 @@ cadregascript.cabal
 Main.hi
 Main.o
 *~
+.DS_Store
+brambilla
