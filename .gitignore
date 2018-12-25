@@ -1,3 +1,5 @@
 .stack-work/
 cadregascript.cabal
+Main.hi
+Main.o
 *~

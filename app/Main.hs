@@ -57,7 +57,7 @@ until_ pred prompt action = do
       else action result >> until_ pred prompt action
 
 runRepl :: IO ()
-runRepl = nullEnv >>= until_ (== "quit") (readPrompt "Lisp>>> ") . evalAndPrint
+runRepl = nullEnv >>= until_ (== "fèrmes") (readPrompt "🍎 ▶ ") . evalAndPrint
 
 {- 
   PARSER
