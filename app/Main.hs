@@ -78,9 +78,9 @@ parseAtom = do
   rest <- many (letter <|> digit <|> symbol)
   let atom = first:rest
   return $ case atom of 
-    "#t" -> Bool True
-    "#f" -> Bool False
-    _    -> Atom atom
+    "#l'è vera"       -> Bool True
+    "#l'è minga vera" -> Bool False
+    _                 -> Atom atom
 
 parseNumber :: Parser LispVal
 parseNumber = liftM (Number . read) $ many1 digit
@@ -125,8 +125,8 @@ showVal :: LispVal -> String
 showVal (String contents)      = "\"" ++ contents ++ "\""
 showVal (Atom name)            = name
 showVal (Number contents)      = show contents
-showVal (Bool True)            = "#t"
-showVal (Bool False)           = "#f"
+showVal (Bool True)            = "#l'è vera"
+showVal (Bool False)           = "#l'è minga vera"
 showVal (List contents)        = "(" ++ unwordsList contents ++ ")"
 showVal (DottedList head tail) = "(" ++ unwordsList head ++ " . " ++ showVal tail ++ ")"
 
@@ -144,9 +144,9 @@ eval env (List [Atom "if", pred, conseq, alt]) =
         case result of
              Bool False -> eval env alt
              otherwise -> eval env conseq
-eval env (List [Atom "set!", Atom var, form]) =
+eval env (List [Atom "ciapa-che!", Atom var, form]) =
      eval env form >>= setVar env var
-eval env (List [Atom "define", Atom var, form]) =
+eval env (List [Atom "ciapa", Atom var, form]) =
      eval env form >>= defineVar env var
 eval env (List (Atom func : args)) = mapM (eval env) args >>= liftThrows . apply func
 eval env badForm = throwError $ BadSpecialForm "Unrecognized special form" badForm
